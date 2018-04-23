@@ -1,0 +1,277 @@
+/* PAGE MAIN STYLES
+   ========================================================================== */
+
+body {
+    font-family: Verdana, liberation;
+    background: #EEEE33;
+    color: #DD0000;
+    font-size: 14px;
+}
+
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+section {
+    display: block;
+    width: 77%;
+    float: right;
+}
+
+/* PAGE ELEMENTS STYLES
+========================================================================== */
+
+a {
+    color: #DD0000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #CC0000;
+}
+
+ul {
+    list-style-image: url("./imagens/Engrenagem.png");
+}
+
+nav > ul {
+    line-height: 230%;
+    margin-top: 50px;
+}
+
+.ender {
+    text-align: right;
+    font-size: 15px;
+    line-height: 140%;
+    float: right;
+/* display: inline-block; */
+/* ^^^^^^^^
+    inline-block is ignored due to the float.
+    If 'float' has a value other than 'none',
+    the box is floated and 'display' is treated as 'block'*/
+}
+
+.imgLogo {
+    border-bottom: solid 3px;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.apres {
+    text-align: center;
+ }
+
+.apres > h3 {
+    color: #000066;
+    text-align: left;
+}
+
+.apres > ol {
+    text-align: left;
+    line-height: 2em;
+
+}
+
+.listaPecas {
+    color: #000066;
+    list-style-type: upper-roman;
+}
+
+.preco {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+#conteudo {
+    margin: 0 auto;
+}
+
+/* STYLES FOR EX4
+========================================================================== */
+
+.tabBike {
+    border: solid thin #FFCC44;
+    border-collapse: collapse;
+    margin-top: 6px;
+    color: #000066;
+    font: Arial, Ubuntu;
+    background: #FFCC44;
+}
+
+.tabBike > td,
+th,
+tr {
+    border: 3px solid #226699;
+    padding: 6px 12px 6px 12px;
+}
+
+.tabBike > .preco {
+    color: #EE0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.titulo {
+    color: #FFFF00;
+    background: #228855;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.linTH {
+    color: #FFFFFF;
+    background: #22AA55;
+    vertical-align: middle;
+}
+
+.colTH {
+    color: #FFFFFF;
+    background: #2299DD;
+    text-align: left;
+    border: 3px solid #226699;
+}
+
+.imgBike {
+    width: 70px;
+    height: 70px;
+}
+
+.borda {
+    border: 3px solid #226699;
+}
+
+/* FORMS STYLES
+==========================================================================
+*/
+
+/* fieldsets */
+
+fieldset {
+    margin: 20px 10px 0px 10px;
+    display: inline;
+    margin: 0;
+}
+
+.fsEsq {
+    float: left;
+}
+
+/* .fsDir {
+    float: right;
+}
+    ^^^^^^^^
+    Property is ignored due to the display.
+    With 'display: inline', the width, height,
+    margin-top, margin-bottom, and float properties
+    have no effect. */
+
+.fsEsqCompras {
+/* float: left; */
+ /* ^^^^^^^^
+    Property is ignored due to the display.
+    With 'display: inline', the width, height,
+    margin-top, margin-bottom, and float properties
+    have no effect. */
+    display: inline;
+}
+
+.fsDirCompras {
+/* float: right; */
+/*  ^^^^^^^^
+    Property is ignored due to the display.
+    With 'display: inline', the width, height,
+    margin-top, margin-bottom, and float properties
+    have no effect. */
+    display: inline;
+}
+
+/* linhas */
+
+.fsLin {
+    width: 480px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.linCompras {
+    width: 500px;
+    margin-bottom: 6px;
+}
+
+.sevoce {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* buttons */
+
+.btn {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+/* alinhar itens à esquerda */
+
+.colPri {
+    float: left;
+    display: block;
+    width: 90px;
+}
+
+.colPriCompras {
+    float: left;
+    display: block;
+    width: 86px;
+}
+
+/* alinhar itens à direita */
+
+.elemDir {
+    float: right;
+    display: block;
+    margin-right: 14px;
+}
+
+/* tamanho dos inputs */
+
+.inpGrande {
+    width: 370px;
+}
+
+.inpMedio {
+    width: 120px;
+}
+
+.numDD {
+    width: 30px;
+}
+
+.numQD {
+    width: 50px;
+}
+
+.inpEmail {
+    width: 200px;
+
+}
+
+label {
+    text-align: left;
+}
+
+.dados {
+    margin-top: 10px;
+}
+
+.margin_btn {
+    margin-left: 50px;
+}

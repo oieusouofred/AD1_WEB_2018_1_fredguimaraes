@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="FREDERICO GUIMARAES">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <title>TABELA COMUM COM JUNÇÃO DE CÉLULAS</title>
+
+
+        <link rel="stylesheet" href="./AD1_WEB_2018.css">
+
+    </head>
+
+<!-- 4. A Fig. 4 mostra o interior da section da página que será aberta quando o link
+“Bicicletas” for selecionado na página da segunda questão. Esta página utiliza os mesmo
+estilos da questão anterior, com os acréscimos de alguns estilos de tabela. A apresentação
+dos produtos é feita utilizando uma tabela com bordas definida com o estilo tabBike. A
+tabela têm células td e th modificadas conforme o contexto. Foram também definidas as
+classes titulo (utilizada na primeira linha da tabela), linTH (utilizada nas células de
+legenda das colunas), colTH (utilizada nas células de legenda das linhas) e preco
+(utilizada para pintar os preços de vermelho). Apenas o interior da tag section foi
+modificado em relação à página da segunda questão (header e nav permanecem como
+mostrado nas figuras das questões 2 e 3). A descrição dos novos estilos necessários está
+no quadro 4 e eles devem ser adicionados ao arquivo CSS usado na questão anterior.
+[2 pontos] -->
+
+    <body>
+
+        <header>
+
+            <div class="imgLogo">
+                <img src="./imagens/PedalarTopo.png" width="410px" alt="Pedalart logo">
+            </div>
+
+            <div class="ender">
+                <address>Av. Tour de France, 1903<br>Tel: (22) 2222 2222<br>
+                    <a target="_blank" href="mailto:contato@pedalarte.com.br">
+                        contato@pedalarte.com.br</a>
+                </address>
+            </div>
+
+        </header>
+
+        <nav>
+            <ul type="circle" style="line-height:35px;">
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX2.html">Apresentação</a>
+                </li>
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX3.html">Peças</a>
+                </li>
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX4.html">Bicicletas</a>
+                </li>
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX5.html">Cadastro</a>
+                </li>
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX6.html">Compras</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+        <section class="apres">
+
+            <table class="tabBike" border="1" >
+                <tr>
+                    <th class="titulo" colspan="4">BICICLETAS</th>
+                </tr>
+                <tr>
+                    <th class="linTH">Tipo</th>
+                    <th class="linTH">Modelo</th>
+                    <th class="linTH">Foto</th>
+                    <th class="linTH">Preço</th>
+                </tr>
+                <tr>
+                    <td class="colTH" rowspan="2">Aro 16</td>
+                    <td>Nome de Bicicleta</td>
+                    <td class="borda" ><img  class="imgBike" src="./imagens/Bike_Caloi_ARO16.jpg" alt="Bike_Caloi_ARO16"></td>
+                    <td class="preco">R$ 266,88</td>
+                </tr>
+                <tr>
+                    <td>Nome de Bicicleta</td>
+                    <td class="borda"><img class="imgBike"  src="./imagens/Bike_MTB_ARO16.jpg" alt="Bike_MTB_ARO16"></td>
+                    <td class="preco">R$ 266,88</td>
+                </tr>
+                <tr>
+                    <td class="colTH" rowspan="2">Aro 26</td>
+                    <td>Nome de Bicicleta</td>
+                    <td class="borda"><img class="imgBike" src="./imagens/Bike_Caloi_ARO26.jpg" alt="Bike_Caloi_ARO26"></td>
+                    <td class="preco">R$ 266,88</td>
+                </tr>
+                <tr>
+                    <td>Nome de Bicicleta</td>
+                    <td class="borda"><img class="imgBike" src="./imagens/Bike_Poty_ARO26.jpg" alt="Bike_Poty_ARO26"></td>
+                    <td class="preco">R$ 266,88</td>
+                </tr>
+            </table>
+
+
+
+        </section>
+
+    </body>
+</html>

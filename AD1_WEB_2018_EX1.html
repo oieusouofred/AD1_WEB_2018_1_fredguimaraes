@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="FREDERICO GUIMARAES">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PÁGINA COM LAYOUT BASEADO EM TABELA</title>
+
+        <style>
+            body {
+                font-family: Verdana;
+                background: #EEEE33;
+                color: #DD0000;
+            }
+
+            a {
+                color: #DD0000;
+            }
+
+            a:visited {
+                color: #CC0000;
+            }
+        </style>
+
+    </head>
+    
+    <!-- Escreva o código necessário para criar esta página mostrada na Fig. 1. 
+    [*] O posicionamento dos elementos na página deve ser feito utilizando uma tabela de
+    bordas invisíveis. 
+    [*] Os textos da página devem utilizar a fonte “verdana” ou,
+    caso este não esteja presente (como no Linux), o fonte “liberation” (fonte
+    mostrado na figura). 
+    [*] As referências do menu apontam respectivamente para as
+    páginas: Pedalarte.html, Pecas.html, Bicicletas.html, Cadastro.html e
+    Compras.html. 
+    [*] Os links do menu estão numa lista NÃO numerada, com cada item
+    indicado por um círculo (circle). 
+    [*] A seleção de um link deve causar a
+    abertura da página correspondente em uma nova janela do navegador (ou novo tab).
+    [*] Use uma tag <address> para as informações de localização (endereço, telefone
+    e email). * No canto superior esquerdo aparece uma imagem (arquivo
+    PedalarTopo.png), com uma linha contínua abaixo dela (criada pela tag HR). 
+    [*] Junto com o texto de apresentação aparece a imagem Pedalarte.png centralizada.
+    [*] As cores utilizadas foram: Fundo - #EEEE33, Texto - #DD0000, Link - #DD0000
+    e Link Visitado - #CC0000. [1,5 pontos] -->
+    
+    <body>
+
+        <table width="50%" border="0" align="center">
+
+<!-- START FIRST ROW -->
+            <tr>
+
+<!-- TOP LEFT CELL-->
+                <td colspan="2">
+                    <div align="center">
+                        <img src="./imagens/PedalarTopo.png" alt="Logo Pedalart">
+                        <hr width="410px" noshade size="3"> 
+                    </div>
+                </td>
+
+<!-- TOP RIGHT CELL-->
+                <td >
+                    <div align="right" valign="top">
+                        <address>Av. Tour de France, 1903<br>Tel: (22) 2222 2222<br>
+                            <a target="_blank" href="mailto:contato@pedalarte.com.br">
+                                contato@pedalarte.com.br</a>
+                        </address>
+                    </div>
+                </td>
+            </tr>
+
+<!-- START SECOND ROW -->
+            <tr>  
+
+<!-- BOTTOM LEFT CELL -->
+                <td valign="top" colspan="1" width="180">
+                    <ul type="circle" style="line-height:35px;">
+                        <li>
+                            <a target="_blank" href="Pedalart.html">Apresentação</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="Peças.html">Peças</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="Bicicletas.html">Bicicletas</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="Cadastro.html">Cadastro</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="Compras.html">Compras</a>
+                        </li>
+                    </ul>
+                </td>
+
+<!-- BOTTOM RIGHT -->
+                <td colspan="2">
+                    <div align="center">
+                        <p>Queremos proporcionar a você
+                            <br>
+                            a melhor experiência de pedal</p>
+                        <img hspace="15px" src="./imagens/Pedalarte.png" alt="Pedalarte coração">
+                        <br>
+                        <p>Com qualidade e bom preço</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </body>
+
+
+
+</html>

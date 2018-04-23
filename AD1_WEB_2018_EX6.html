@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="FREDERICO GUIMARAES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <title>FORMULÁRIOS COM NOVOS ELEMENTOS</title>
+
+
+    <link rel="stylesheet" href="./AD1_WEB_2018.css">
+
+</head>
+
+<!-- 6. A Fig. 6 mostra o interior da tag section da página que será aberta quando o link
+“Compras” for selecionado na página da segunda questão. A página utiliza as mesmas
+cores e estilos definidos para as páginas das questões anteriores e alguns novos estilos.
+Utilizando tags como <label>, <fieldset>, <legend>, <form>, <select>,
+<option>, <optgroup>, <textarea> e <input/>, faça o formulário de modo que
+o posicionamento de seus elementos seja como o mostrado na figura. Defina o atributo
+readonly no campo valor. Apenas o interior da tag section foi modificado em relação à
+página da segunda questão. Para esta página foram criadas novas classes de estilo, muito
+parecidas com as criadas para o formulário anterior, mas com alguma diferença
+principalmente em termos de largura. A descrição das novas classes de estilos está no
+quadro 6 e eles devem ser adicionados ao arquivo CSS usado na questão anterior.
+[1,5 pontos] -->
+
+<body>
+
+    <header>
+
+        <div class="imgLogo">
+            <img src="./imagens/PedalarTopo.png" width="410px" alt="Pedalart logo">
+        </div>
+
+        <div class="ender">
+            <address>Av. Tour de France, 1903
+                <br>Tel: (22) 2222 2222
+                <br>
+                <a target="_blank" href="mailto:contato@pedalarte.com.br">
+                    contato@pedalarte.com.br</a>
+            </address>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul type="circle" style="line-height:35px;">
+            <li>
+                <a target="_blank" href="./AD1_WEB_2018_EX2.html">Apresentação</a>
+            </li>
+            <li>
+                <a target="_blank" href="./AD1_WEB_2018_EX3.html">Peças</a>
+            </li>
+            <li>
+                <a target="_blank" href="./AD1_WEB_2018_EX4.html">Bicicletas</a>
+            </li>
+            <li>
+                <a target="_blank" href="./AD1_WEB_2018_EX5.html">Cadastro</a>
+            </li>
+            <li>
+                <a target="_blank" href="Compras.html">Compras</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="apres">
+
+        <h3>Compras</h3>
+
+        <form class="fsLin" method="post" action="mailto:oieusouofred@gmail.com">
+
+            <fieldset>
+
+                <legend for="">Identificação</legend>
+
+                <!-- linha EMAIL e SENHA -->
+                <div class="linCompras">
+                    <label for="mail">E-mail:</label>
+                    <input type="mail" name="user_mail" id="mail" class="inpEmail" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="user_senha" id="senha" required>
+                </div>
+
+                <p class="sevoce">
+                    <em>
+                        <strong>Se você ainda não tem cadastro,
+                            <a href="">Clique Aqui!</a>
+                    </em>
+                    </strong>
+                </p>
+
+            </fieldset>
+
+            <!-- fim do fieldset IDENTIFICACAO -->
+
+            <fieldset>
+
+                <legend>Lista de Compras e Pagamentos</legend>
+                <!-- TEXTAREA-->
+                <div class="linCompras">
+                    <textarea name="" id="" cols="15" rows="10" class="elemDir" name="carrinho"></textarea>
+                    <!-- Menu Produtos -->
+
+                    <label for="produtos">Produtos:
+                        <br>
+                        <select name="lista_prodytos" id="produtos">
+                            <optgroup label="--- Selecione Produtos Aqui ---" selected></optgroup>
+                            <optgroup label="Guidom">
+                                <option value="aluminio_cb">Aluminio CB Reforcado Polido</option>
+                                <option value="aluminio_speed">Aluminio Speed</option>
+                            </optgroup>
+                            <optgroup label="Selim">
+                                <option value="selim_rad">RAD 7 Confrot</option>
+                                <option value="selim_serfas">Serfas E-gel DDMD-200</option>
+                            </optgroup>
+                            <optgroup label="Pedal">
+                                <option value="pedal">Pedal Ingles</option>
+                            </optgroup>
+                            <optgroup label="Bicicleta">
+                                <option value="bicicleta_mtb">MTB A16 Volt</option>
+                                <option value="bicicleta_caloi_a16">CALOI A16 CECI</option>
+                                <option value="bicicleta_poty">POTY A26</option>
+                                <option value="bicicleta_caloi_a26">CALOI A26 Sport</option>
+                            </optgroup>
+                        </select>
+
+                        <button type="button" class="">Comprar</button>
+                    </label>
+                </div>
+
+
+
+
+                <!-- Menu Produtos -->
+
+                <fieldset class="fsEsqCompras">
+                    <legend>Dados do Cartão</legend>
+
+                    <!-- BANDEIRAS -->
+                    <fieldset class="fsEsqCompras">
+                        <legend>Bandeira</legend>
+                        <div class="">
+                            <label for="visa">Visa</label>
+                            <input type="radio" name="bandeira_cartao" id="visa">
+                            <label for="master">Master</label>
+                            <input type="radio" name="bandeira_cartao" id="master">
+                            <label for="amex">Amex</label>
+                            <input type="radio" name="bandeira_cartao" id="amex">
+                        </div>
+                    </fieldset>
+                    <!-- BANDEIRAS -->
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="dados">
+                        
+                    <label for="validade">Validade: 
+                    <input type="number" name="produto_validade_month" id="validade" min="1" max="12" class="numDD"> /
+                    <input type="number" name="validade_produto_ano" min="2018" max="2026" class="numQD"></label>
+                    </div>
+                    
+                   
+                    <div class="dados">
+                    <label for="numero" class="">Número
+                    <input type="text" name="produto_numero" id="numero" class="inpEmail" ></label>
+                    </div>
+                </fieldset>
+                <!-- Fim do fieldset DADOS DO CARTAO -->
+                <br>
+                <div >
+                    
+                    <label for="preco" class="elemDir dados">Valor: R$
+                        <input type="text" name="produto_preco" id="preco" class="inpMedio"> </label>
+                </div>
+
+
+            </fieldset>
+
+            <!-- Fim do fieldset Lista de Compras e Pagamentos -->
+
+            <div class="btn fsDir">
+                <button type="submit">Enviar</button>
+
+                <button type="reset">Limpar</button>
+
+            </div>
+        </form>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="FREDERICO GUIMARAES">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <title>FORMULÁRIOS COM NOVOS ELEMENTOS</title>
+
+
+        <link rel="stylesheet" href="./AD1_WEB_2018.css">
+
+    </head>
+
+<!-- A Fig. 5 mostra o interior da tag section da página que será aberta quando o link
+“Cadastro” for selecionado na página da segunda questão. A página utiliza as mesmas
+cores e estilos definidos para as páginas das questões anteriores e alguns novos estilos.
+Utilizando tags como <label>, <fieldset>, <legend>, <form>, <textarea>
+e <input/> , faça o formulário de modo que o posicionamento de seus elementos seja
+como o mostrado na figura. Apenas o interior da tag section foi modificado em relação à
+página da segunda questão. A descrição dos novos estilos está no quadro 5 e eles devem
+ser adicionados ao arquivo CSS usado na questão anterior. [1,5 pontos] -->
+
+    <body>
+
+        <header>
+
+            <div class="imgLogo">
+                <img src="./imagens/PedalarTopo.png" width="410px" alt="Pedalart logo">
+            </div>
+
+            <div class="ender">
+                <address>Av. Tour de France, 1903<br>Tel: (22) 2222 2222<br>
+                    <a target="_blank" href="mailto:contato@pedalarte.com.br">
+                        contato@pedalarte.com.br</a>
+                </address>
+            </div>
+
+        </header>
+
+        <nav>
+            <ul type="circle" style="line-height:35px;">
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX2.html">Apresentação</a>
+                </li>
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX3.html">Peças</a>
+                </li>
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX4.html">Bicicletas</a>
+                </li>
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX5.html">Cadastro</a>
+                </li>
+                <li>
+                    <a target="_blank" href="./AD1_WEB_2018_EX6.html">Compras</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <section class="apres">
+
+            <h3>Cadastro</h3>
+
+            <form class="fsLin" method="post" action="mailto:oieusouofred@gmail.com">
+        
+                <fieldset >
+        
+                    <legend> Identificação </legend>
+        
+                    <div class="fsLin">
+                        <label class="colPri" for="mail">E-mail:</label>
+                        <input class="inpGrande" type="email" name="user_mail" id="mail" required>
+                        <!-- Type = especifica a o tipo de informação que sera inserida no campo. Esse atributo troca o teclado no dispositivo que site esteja sendo aberto. -->
+                        <!-- Name =  -->
+                        <!-- Id = conecta o input com o Label via for="" -->
+                    </div>
+
+                    <div class="fsLin">
+                        <label class="colPri " for="senha">Senha:</label>
+                        <input class="inpMedio" type="password" name="user_senha" id="senha" required>
+                    
+                        <label class="elemDir" for="conf">Confirme:
+                        <input class="inpMedio" type="password" name="user_senha" id="conf" required></label>
+
+                        <!-- é necessario aglutinar a tag input Pra que ela acompanhe o Label, caso contrario ela ficara solta no flow da pagina-->
+                    
+                    </div>
+        
+                </fieldset >
+<!-- Fim do fieldset IDENTIFICACAO -->        
+        
+                <fieldset>
+        
+                    <legend> Dados Pessoais</legend>
+                    
+                    <div class="fsLin">
+                        <label class="colPri " for="name">Nome:</label>
+                        <input class="inpGrande " type="text" name="user_name" id="name" required>
+                    </div>
+
+                    <div class="fsLin">
+                        <label class="colPri " for="end">Endereço:</label>
+                        <textarea class="inpGrande " type="text" name="user_end" id="end"></textarea>
+                    </div>
+
+                    <div class="fsLin">
+                        <label class="colPri " for="fone">Telefone:</label>
+                        <input class="inpMedio " type="tel" name="user_phone" id="fone">
+                    
+                        <label class=" elemDir" for="cell">Celular:
+                        <input class="inpMedio " type="tel" name="user_cell" id="cell"></label>
+                    </div>
+
+                <fieldset class="fsEsq">
+                    
+                    <legend> Nescimento:</legend>
+                    <input class="numDD" type="number" name="user_bday" id="day" min="1" max="31" required> /
+                    <input class="numDD" type="number" name="user_bmonth" id="mon" min="1" max="12" required> /
+                    <input class="numQD" type="number" name="user_byear" id="year" min="1920" max="2000" required>
+                    
+                </fieldset>
+                
+                <fieldset class="fsDir">
+                    
+                    <legend> Sexo:</legend>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" value="masculino" name="user_gender">
+                    <!-- o atributo NAME deve ser igual nos dois radios, caso contrario o browser pensa que os botoes fazem parte de grupos de radios diferentes. Fazendo com que mais de um possa ser selecionado ao mesmo tempo.-->
+                    
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="feminino" value="feminino" name="user_gender">
+                    
+                </fieldset>
+            </fieldset>
+<!-- Fim do fieldset Dados Pessoais -->
+                
+                <div class="btn fsDir">
+                    <button type="submit">Enviar</button>
+        
+                    <button type="reset">Limpar</button>
+                </div>
+ 
+            </form>
+        
+        </section>
+</body>
